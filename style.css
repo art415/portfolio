@@ -1,5 +1,12 @@
-/*css comments look like this*/
+/*
+INTRO:
+  this is my main styling doc for my webpage. 
+  styles are the same across pages on my site. 
+*/
 
+/*
+LOADING ALL FONT CLASSES (src: GOOGLE FONTS)
+*/
 .poppins-thin {
   font-family: "Poppins", serif;
   font-weight: 100;
@@ -108,11 +115,17 @@
   font-style: italic;
 }
 
+/*
+STYLING MAIN PAGE ELEMENTS
+*/
+
+/*changing bkgr color to something more unique*/
 body {
   background-color: rgb(246, 232, 214);
   font-family: "Poppins";
 }
 
+/*styling horizontal lines used for breaks -- same as flourish accents. */
 hr {
   height: 3px;
   border: none;
@@ -123,6 +136,17 @@ p {
   font-size: 0.8em;
 }
 
+/* style list elements the same as paragraph elements */
+ul {
+  font-size: 0.8em;
+}
+
+
+/*
+STYLING DIVS
+*/
+
+/*content generally involves all content on my page but navbar*/
 #content {
   width: 60%;
   margin: auto;
@@ -130,6 +154,7 @@ p {
   padding-bottom: 15px;
 }
 
+/*'title' only used on homepage*/
 #title {
   font-family: "Poppins";
   text-align: left;
@@ -143,60 +168,89 @@ p {
   font-weight: 400;
 }
 
+/*styling for navbar*/
 #nav-bar {
   width: 100%;
+  /*allows for items to be displayed horizontally*/
   display: flex;
   flex-direction: row;
   background-color: rgb(102, 60, 0);
+  /*keeps navbar accessible even on scroll*/
   position: sticky;
   top: 0;
 }
 
+/* style of the button */
+.nav-item {
+  margin: auto;
+  padding: 10px;
+  /*makes sure the button blends into the bar*/
+  background-color: #663c00;
+  font-family: "Poppins"
+}
+
+/* style of link (i.e. words) */
+.nav-item a {
+  color: white;
+  /* remove underline */
+  text-decoration: none
+}
+
+/* used chatgpt for hover settings */
+
+/* this specifies additional behavior when user hovers. */
+  /* just like I could specify by tag within my nav-item class */
+.nav-item a:hover {
+  /* change text color from white to mauve */
+  color: #a76c89;
+  text-decoration: none;
+}
+
+
+/*styling for images*/
+
+/*add an image container that's a slightly different color*/
+  /*makes images feel more grounded*/
 .img_container {
   width: 100%;
   background-color: rgb(241, 217, 186);
 }
 
+/*center image*/
 img{
   margin: auto;
   display: block;
 }
 
+/*image caption styling; also used for image save out links*/
 .source {
   font-size: 0.5em;
   padding-top: 5px;
   padding-left: 2px;
 }
-.nav-item {
-  margin: auto;
-  padding: 10px;
-  background-color: rgb(102, 60, 0);
-  font-family: "Poppins"
-}
 
-.nav-item a {
-  color: white;
-  text-decoration: none
-}
-
+/*only used on homepage; styling the contact me box.*/
 #contact {
   border: 1px solid black;
-  padding: 10px;
+  padding:10px;
   font-style: italic;
   text-align: center;
 }
 
+/*reduces width of flourish embeds w.r.t overall document margins*/
 .flourish-embed {
   width: 85%;
   margin: auto;
 }
 
+/*only used in my work tab*/
 #byline {
   font-size: 0.7em;
   font-weight: 500;
   color: gray;
 }
 
+/*responsive design for phone */
 @media (orientation: portrait) {
   #content {
     width: 100%;
@@ -209,6 +263,9 @@ img{
   }
 }
 
+/*when users click a hyperlink and then click the back arrow to return to the page
+this setting makes it so the page scrolls smoothly to where they left off. 
+*/
 html {
   scroll-behavior: smooth;
 }

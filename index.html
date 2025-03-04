@@ -1,18 +1,25 @@
+<!--
+INTRO 
+    this document includes all content for the homepage of my website. 
+-->
 <head>
+    <!-- this section allows google fonts to be accessed. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- this links my styles -->
     <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- this allows my soundcite to work -->
+    <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
 </head>
 
-<!-- alt text is a part of the img tag -->
-<!-- importing fonts -- you can link to the google fonts in css -->
-<!--- can even add a blog section -->
-<!--- you don't need/want visuals right up front -->
 
 <body>
+
+    <!-- nav bar including two sections -->
 
     <div id="nav-bar">
         <div class="nav-item">
@@ -23,29 +30,43 @@
         </div>
     </div>
 
+    <!-- content div contains all content on screen -->
+
     <div id="content">
+        <!-- title div contains title and subhead of this page -->
         <div id="title">
             <h1>Arthi Venkatesh</h1>
+            <!--- tktktk is on purpose -->
             <h2>Student. Writer. TKTKTK.</h2>
         </div>
 
-
+        <!-- embedding soundcite for name pronounciation/personalization -->
         <p>
-            [**insert interactive soundcite here**]I'm a student from Northwestern majoring in journalism, economics and
+            <span class="soundcite" data-url="https://art415.github.io/portfolio/audio/name_recording.m4a"
+                data-start="0" data-end="3000" data-plays="1">Hi! I'm Arthi Venkatesh.</span>
+            I'm a student from Northwestern majoring in journalism, economics and
             minoring in data science with a certificate in human-computer interaction.
         </p>
-
-        <!-- check for alt text by inspecting -->
-        <img src="https://placecats.com/300/200" alt="grey striped cat looking at viewer" />
-        <!-- allow download option -->
-        <a href=download this picture <p>
+        <!-- more info about myself -->
+        <p>
+            I'm interested in design, data analysis, reporting and visualization, but I'm also interested in policy
+            work. Lately, I've been really interested in transportation policy specifically &mdash; that's what the
+            story I'm showcasing here covers.
+        </p>
+        <br>
+        <!-- link to my work (also seen in navbar) -->
+        <p>
             See my work <a href=my_work.html>here</a>.
-            </p>
-
-            <div id="contact">
+        </p>
+        <br>
+        <!-- setting up contact me box. -->
+        <div id="contact">
+            <p style="font-size: 0.6em;">
                 Want to get in touch?
+                <!-- using mailto: so that it registers as an email address when they copy it -->
                 Email me at <a href="mailto:arthi@u.northwestern.edu">arthi@u.northwestern.edu</a>
-            </div>
+            </p>
+        </div>
 
     </div>
 

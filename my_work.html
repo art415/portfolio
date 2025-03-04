@@ -1,3 +1,7 @@
+<!-- 
+INTRO 
+    this document houses my work sample for this site. 
+-->
 <head>
     <!-- same styles as in home page -->
     <link href="style.css" type="text/css" rel="stylesheet" />
@@ -34,8 +38,8 @@
                 alt="Cars waiting in traffic on a 5 lane expressway." />
         </div>
 
-        <!-- source and caption -->
-        <div class="source">Cars waiting in traffic on the Dan Ryan expressway in Chicago. Can't see this image? Click
+        <!-- source and caption, with link to static image -->
+        <div class="source">Cars waiting in traffic on the Dan Ryan expressway in Chicago. | Can't see this image? Click
             <a href="traffic.jpg">here</a><br>"Traffic" by Kim Scarborough is licensed under CC BY-SA 2.0. To view a
             copy of this license, click <a href=https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse>here</a>.
         </div>
@@ -50,6 +54,7 @@
         </p>
 
         <!-- introductory visual: map of crashes across chicago -->
+         <!-- wrapping this in an image container to keep styling constant across embeds. -->
         <div class="img_container">
             <div class="flourish-embed flourish-map" data-src="visualisation/21869029">
                 <script src="https://public.flourish.studio/resources/embed.js"></script><noscript>
@@ -59,6 +64,7 @@
         </div>
         <div class="source">Can't see this map? See a static version <a href = "map.png">here</a>.</div>
 
+        <!-- begin exploring causes of crashes -->
         <h2>Why Do People Crash?</h2>
         <p>
             Understanding the reasons why people get into traffic accidents is the first step to lowering crash rates,
@@ -80,6 +86,8 @@
             driver is "involved in a collision at an intersection or interferes with the movement of other vehicles
             after driving past a yield right-of-way sign," like a stop sign or yield sign.
         </p>
+
+        <!-- using my image container to wrap flourish embed in same styling as my image -->
         <div class="img_container">
             <div class="flourish-embed" data-src="story/2944173">
                 <script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img
@@ -148,7 +156,7 @@
 
         <p>
             Ultimately, cellphone-related crashes are avoidable crashes. We saw that cellphone-related crash rates have
-            been decreasing since 2019, possibly pointing to the efffectiveness of Chicago's efforts to curb distracted
+            been decreasing since 2019, possibly pointing to the effectiveness of Chicago's efforts to curb distracted
             driving.
             Even at its lowest, though, there were still more than 150 cellphone-related crashes in Chicago.
         </p>
@@ -157,8 +165,51 @@
             State legislators have been active in introducing new policy surrounding distracted driving. Just last year,
             <a
                 href="https://www.ilga.gov/legislation/billstatus.asp?DocNum=2431&GAID=17&GA=103&DocTypeID=HB&LegID=147512&SessionID=112&SpecSess=">a
-                bill</a> went into affect that
+                bill</a> went into effect that
             makes it illegal for people to participate in a video conference or access social media while driving.
+        </p>
+
+        <!-- inserting a line to signal departure from main story. -->
+        <hr>
+        <h1>Methodology</h1>
+
+        <p>
+            My work for this project came from two samples of data from the Chicago Data Portal called <a href = "https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if/about_data">"Traffic Crashes - Crashes"</a>. 
+            This is a dataset comprised of data on traffic crashes compiled by the Chicago Police Department, with citywide data available after September 2017. 
+            The dataset includes info on crash location, environmental conditions during the crash and injuries sustained. 
+        </p>
+        <p> 
+            The first sample of data I took from this dataset was all traffic crashes that took place between August 2024 and February 24, 2025. 
+            I conducted exploratory analysis in Google Sheets to see where stories may lie in this dataset. 
+        </p>
+        <p>    
+            Broadly, I explored the following categories:
+        </p>
+            <ul>
+                <li>How do crash rates vary over time? (months, day of the week, hour)</li>
+                <li>How do crash rates vary based on safety measures on the road? (speed limit, roadway type, etc.)</li>
+                <li>How do crash rates vary depending on environmental factors? (weather, amount of daylight, etc.)</li>
+                <li>What types of crashes are we seeing? (ex. severe crashes vs non-severe, rear ends, what is the crash caused by, etc.)</li>
+            </ul>
+        <p>
+            I did find some inconsistencies in terms of data entry; whenever this impacted any of the data I reference in my article, I add it in a footnote.
+        </p>
+
+        <p>
+            This helped me narrow my scope to crashes caused by cellphone use. I saw that cellphone use was at the bottom when it came to what most often ended up causing traffic crashes, which I thought was surprising given the amount of messaging aimed at young people surrounding texting and driving &mdash; I would have thought distracted driving crashes made up a larger proportion of all crashes. 
+        </p>
+        <p>
+            This ended up pushing me to query the traffic crash data again, as I wanted to see how cellphone-related crashes varied over the years (if you remember, my initial dataset only covered the last six months).
+            I ended up having to use the Chicago Data Portal's site to do some of the processing here since Google Sheets wasn't able to handle the huge amount of data &mdash; this process as well as the rest of my processing work is laid out in detail in <a href = "https://docs.google.com/document/d/1coKd7yPY7rrAdyks-8jaxfTQVMEV4NQo9rlRs5He2O8/edit?tab=t.0#heading=h.zdcdi17tdaiv">this document</a> (you can also view my spreadsheet there). 
+        </p>
+
+        <hr>
+        <h1>AI Declaration</h1>
+
+        <p>
+        I used AI to add the hover styling on my navbar (when a user hovers over the link, it changes color). 
+        Learning to do this made me realize that styling could be triggered by user action, not just the type of content I was styling. 
+        I hope to incorporate more features like this in my future work. 
         </p>
 
     </div>

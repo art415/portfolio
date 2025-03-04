@@ -10,6 +10,21 @@ Learn more about how I worked through that dataset [here](https://docs.google.co
 
 ## directory guide 
 
+### main files 
 -   `index.html`: homepage of my website.
 -   `my_work.html`: display of multimedia tools I learned to work with in this class.
 -   `style.css`: stylesheet used for both pages of my site.
+
+### directories 
+-   [audio](audio): houses an audio clip I use on the homepage of my website
+
+### images
+These are all static versions of visualizations I use in the "my work" section of my site. 
+-   `bar_chart.png`: second page of my flourish story visualization
+-   `pie_chart.png`: first page of my flourish story visualization
+-   `line_chart.png`: timewise visual of cellphone-related crashes 
+-   `map.png`: map of crashes across Chicago in the last 6 months 
+
+This is an image I used in the "my work" section of my site. 
+-   `traffic.jpg`: photo of traffic on the Dan Ryan Expressway 
+
